@@ -1,0 +1,47 @@
+{
+  "hardware": "Intel Xeon Processor, 2 cores, 4GB RAM, Linux x86_64",
+  "n_samples": 10000,
+  "n_warmup": 1000,
+  "n_iterations": 10000,
+  "benchmarks": {
+    "sklearn_predict_proba": {
+      "name": "sklearn predict_proba",
+      "n_iterations": 10000,
+      "mean_ms": 1.8504800641984729,
+      "std_ms": 3.632154755037219,
+      "p50_ms": 1.3319484996827669,
+      "p95_ms": 1.4903770497767255,
+      "p99_ms": 28.295742390055242,
+      "min_ms": 1.249950999408611,
+      "max_ms": 29.60456799974054
+    },
+    "sklearn_predict": {
+      "name": "sklearn predict",
+      "n_iterations": 10000,
+      "mean_ms": 1.8299845186974382,
+      "std_ms": 3.6131252696344083,
+      "p50_ms": 1.320511999892915,
+      "p95_ms": 1.4946271002372662,
+      "p99_ms": 28.23059333999481,
+      "min_ms": 1.2226449998706812,
+      "max_ms": 31.98593399974925
+    },
+    "compiled_model_score": {
+      "name": "compiled_model score (pickle wrapper)",
+      "n_iterations": 10000,
+      "mean_ms": 1.7236292842921102,
+      "std_ms": 3.4984402735103624,
+      "p50_ms": 1.237674499861896,
+      "p95_ms": 1.41139955012477,
+      "p99_ms": 28.164717179761286,
+      "min_ms": 1.1846119996334892,
+      "max_ms": 31.035205999614845
+    }
+  },
+  "speedup_sklearn_proba_vs_compiled": {
+    "mean_x": 1.07,
+    "p50_x": 1.08,
+    "p99_x": 1.0
+  },
+  "note": "m2cgen does not support HistGradientBoostingClassifier; compiled_model.py uses optimized pickle wrapper with lazy loading."
+}

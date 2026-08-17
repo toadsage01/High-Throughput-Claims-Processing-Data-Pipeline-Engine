@@ -1,0 +1,8 @@
+{
+  "reimbursement_zscore": 0.5873824548523248,
+  "los_zscore": 0.005033292914272783,
+  "visit_frequency_zscore": 0.40730901658942315,
+  "code_severity_percentile": 0.0,
+  "high_severity_code_pct": 0.0002752356439792782,
+  "code_severity_outlier": 0.0
+}
